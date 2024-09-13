@@ -67,6 +67,7 @@
 
 @layer base {
   * {
+    font-family: 'Lato', sans-serif;
     @apply border-border;
   }
   body {
