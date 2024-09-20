@@ -1,13 +1,8 @@
 "use client"
 
-import {
-  Carousel, CarouselApi,
-  CarouselContent,
-} from "@/components/ui/carousel";
 import Image from "next/image";
-import NextIcon from "@/public/next.svg";
 import Autoplay from "embla-carousel-autoplay";
-import {useState} from "react";
+import {Carousel, CarouselContent, CarouselItem,} from "@/components/ui/carousel";
 
 import slider1 from '@/public/slider/1.jpg';
 import slider2 from '@/public/slider/2.jpg';
@@ -17,8 +12,6 @@ import slider5 from '@/public/slider/5.png';
 import slider6 from '@/public/slider/6.png';
 
 const Slider = () => {
-  const [api, setApi] = useState<CarouselApi>();
-
   const slider = [
     {
       id: 1,
@@ -47,20 +40,7 @@ const Slider = () => {
   ];
 
   return (
-    <section className="lg:mt-14">
-      <div className="flex items-center gap-x-6 justify-end">
-        <button
-          onClick={() => api?.scrollPrev()}
-          className="-rotate-180"
-        >
-          <Image src={NextIcon} alt="icon" />
-        </button>
-        <button
-          onClick={() => api?.scrollNext()}
-        >
-          <Image src={NextIcon} alt="icon" />
-        </button>
-      </div>
+    <section className="relative h-[680px]">
       <Carousel
         opts={{
           loop: true,
@@ -70,14 +50,22 @@ const Slider = () => {
             delay: 4000,
           }),
         ]}
-        setApi={setApi}
-        className="w-full mt-6"
+        className="w-screen absolute top-0 left-0"
       >
-        <CarouselContent className="max-h-[634px]">
+        <CarouselContent className="max-h-[680px]">
           {slider.map((item) => (
-            <Image key={item.id} src={item.img} alt="img" />
+            <CarouselItem key={item.id}>
+              <div className="relative">
+                <Image src={item.img} alt="img" className="w-screen"/>
+              </div>
+            </CarouselItem>
           ))}
         </CarouselContent>
+        <div className="w-full h-full left-0 top-0 bg-black/50 absolute flex items-center justify-center">
+          <h1 className="text-white scroll-m-20 text-5xl font-semibold tracking-tight text-center max-w-[60%]">
+            Одна из крупнейших интегрированных нефтегазовых компаний
+          </h1>
+        </div>
       </Carousel>
     </section>
   )

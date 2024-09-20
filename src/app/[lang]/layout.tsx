@@ -18,9 +18,9 @@ export async function generateStaticParams() {
 }
 
 export default async function RootLayout({
-  children,
-  params
-}: Readonly<{
+                                           children,
+                                           params,
+                                         }: Readonly<{
   children: React.ReactNode;
   params: LangParams;
 }>) {
@@ -28,11 +28,13 @@ export default async function RootLayout({
 
   return (
     <html lang={params.lang}>
-      <body>
-        <Navbar lang={params.lang} dictionary={dictionary} />
-        {children}
-        <Footer dictionary={dictionary} />
-      </body>
+    <body className="flex flex-col min-h-screen bg-gray-100">
+    <nav className="bg-white">
+      <Navbar lang={params.lang} dictionary={dictionary} />
+    </nav>
+    <main className="flex-grow">{children}</main>
+    <Footer dictionary={dictionary} />
+    </body>
     </html>
   );
 }
