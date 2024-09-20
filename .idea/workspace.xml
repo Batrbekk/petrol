@@ -4,21 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b1c9730-af8e-497d-8146-cace264aa4b0" name="Changes" comment="feat: v2.0">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[lang]/dictionaries.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/dictionaries.js" afterDir="false" />
+    <list default="true" id="5b1c9730-af8e-497d-8146-cace264aa4b0" name="Changes" comment="feat: v3.0">
       <change beforePath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[lang]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/News.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/dictionaries/en.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/dictionaries/kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/dictionaries/kk.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/dictionaries/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/dictionaries/ru.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +64,7 @@
       <updated>1726138256725</updated>
       <workItem from="1726138257835" duration="10154000" />
       <workItem from="1726153638809" duration="26586000" />
-      <workItem from="1726713319413" duration="27044000" />
+      <workItem from="1726713319413" duration="27197000" />
     </task>
     <task id="LOCAL-00001" summary="feat: v2.0">
       <option name="closed" value="true" />
@@ -87,7 +74,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726240824207</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: v3.0">
+      <option name="closed" value="true" />
+      <created>1726826877655</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726826877655</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +101,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: v2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: v2.0" />
+    <MESSAGE value="feat: v3.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: v3.0" />
   </component>
 </project>
