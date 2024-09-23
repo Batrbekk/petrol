@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b1c9730-af8e-497d-8146-cace264aa4b0" name="Changes" comment="feat: fix news in main page">
+    <list default="true" id="5b1c9730-af8e-497d-8146-cace264aa4b0" name="Changes" comment="feat: update info about boss">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/events/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/events/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/dictionaries/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/dictionaries/en.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/dictionaries/kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/dictionaries/kk.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/dictionaries/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/dictionaries/ru.json" afterDir="false" />
     </list>
@@ -66,7 +68,7 @@
       <updated>1726138256725</updated>
       <workItem from="1726138257835" duration="10154000" />
       <workItem from="1726153638809" duration="26586000" />
-      <workItem from="1726713319413" duration="32518000" />
+      <workItem from="1726713319413" duration="34309000" />
     </task>
     <task id="LOCAL-00001" summary="feat: v2.0">
       <option name="closed" value="true" />
@@ -108,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727065751278</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: update info about boss">
+      <option name="closed" value="true" />
+      <created>1727066060266</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727066060266</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +140,7 @@
     <MESSAGE value="feat: v3.0" />
     <MESSAGE value="feat: remove en" />
     <MESSAGE value="feat: fix news in main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: fix news in main page" />
+    <MESSAGE value="feat: update info about boss" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update info about boss" />
   </component>
 </project>
