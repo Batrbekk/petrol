@@ -33,13 +33,13 @@ const Navbar: React.FC<NavbarProps> = ({ lang, dictionary }) => {
     <nav className="container mx-auto flex items-center justify-between my-8">
       <div className="flex items-center gap-x-8">
         <Link href="/" className="cursor-pointer">
-          <Image src={Logo} alt="logo" />
+          <Image src={Logo} alt="logo" className="lg:w-[180px]" />
         </Link>
         <div className="flex items-center gap-x-4">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>{dictionary.navbar.aboutCompany}</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-md">{dictionary.navbar.aboutCompany}</NavigationMenuTrigger>
                 <NavigationMenuContent className="p-4 lg:w-[250px]">
                   <div className="flex flex-col gap-y-2">
                     <Link href="/history">{dictionary.menu.first.history}</Link>
@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, dictionary }) => {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger>{dictionary.navbar.social}</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-md">{dictionary.navbar.social}</NavigationMenuTrigger>
                 <NavigationMenuContent className="p-4 lg:w-[250px]">
                   <div className="flex flex-col gap-y-2">
                     <Link href="/events">{dictionary.menu.second.events}</Link>

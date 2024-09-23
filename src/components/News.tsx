@@ -8,8 +8,7 @@ import newsImage2 from "@/public/news/2.jpg";
 import newsImage3 from "@/public/news/3.jpg";
 import newsImage4 from "@/public/news/4.jpg";
 import newsImage5 from "@/public/news/5.jpg";
-import newsImage6 from "@/public/news/6.jpg";
-import {Separator} from "@/components/ui/separator";
+import newsImages7 from "@/public/news/7.jpg";
 import {Dialog, DialogContent, DialogTitle, DialogTrigger} from "@/components/ui/dialog";
 
 import oilDay1 from "@/public/news/oilWorker/1.jpg";
@@ -43,6 +42,17 @@ import charity4 from "@/public/news/charity/4.jpg";
 import charity5 from "@/public/news/charity/5.jpg";
 import charity6 from "@/public/news/charity/6.jpg";
 
+import nauryz1 from "@/public/news/nauryz/1.jpeg";
+import nauryz2 from "@/public/news/nauryz/2.jpeg";
+import nauryz3 from "@/public/news/nauryz/3.webp";
+import nauryz4 from "@/public/news/nauryz/4.jpeg";
+
+import auzSecond1 from "@/public/news/auyzashar2/1.jpeg";
+import auzSecond2 from "@/public/news/auyzashar2/2.jpeg";
+import auzSecond3 from "@/public/news/auyzashar2/3.jpeg";
+import auzSecond4 from "@/public/news/auyzashar2/4.jpeg";
+import auzSecond5 from "@/public/news/auyzashar2/5.jpeg";
+
 import teamBuilding1 from "@/public/news/teamBuilding/1.jpg";
 import teamBuilding2 from "@/public/news/teamBuilding/2.jpg";
 import teamBuilding3 from "@/public/news/teamBuilding/3.jpg";
@@ -67,10 +77,10 @@ import {Card, CardContent} from "@/components/ui/card";
 interface INewsProps {
   id: number;
   title: string;
-  shortCutTitle: string;
+  detailTitle: string;
   content?: string[];
   img: StaticImageData;
-  images: StaticImageData[];
+  images?: StaticImageData[];
   date: string;
 }
 
@@ -86,7 +96,7 @@ const News = ({ t }: NewsComponentProps) => {
     {
       id: 0,
       title: t.oilWorkerDay.title,
-      shortCutTitle: t.oilWorkerDay.shortcutTitle,
+      detailTitle: t.oilWorkerDay.detailTitle,
       content: t.oilWorkerDay.content,
       img: newsImage1,
       images: [oilDay1, oilDay2, oilDay3, oilDay4, oilDay5, oilDay6, oilDay7, oilDay8],
@@ -95,45 +105,73 @@ const News = ({ t }: NewsComponentProps) => {
     {
       id: 1,
       title: t.bossAwarding.title,
-      shortCutTitle: t.bossAwarding.shortcutTitle,
+      detailTitle: t.bossAwarding.detailTitle,
+      content: t.bossAwarding.content,
       img: newsImage3,
-      images: [awards1, awards2, awards3, awards4],
+      images: [awards4, awards1, awards2, awards3],
       date: '10.06.2024'
     },
     {
       id: 2,
       title: t.charity.title,
-      shortCutTitle: t.charity.shortcutTitle,
+      detailTitle: t.charity.detailTitle,
+      content: t.charity.content,
       img: newsImage5,
       images: [charity1, charity2, charity3, charity4, charity5, charity6],
       date: '09.04.2024'
     },
     {
       id: 3,
+      title: t.nauryz.title,
+      detailTitle: t.nauryz.title,
+      content: t.charity.content,
+      img: nauryz2,
+      images: [nauryz2, nauryz1, nauryz3, nauryz4],
+      date: '22.03.2024'
+    },
+    {
+      id: 4,
       title: t.auyzashar.title,
-      shortCutTitle: t.auyzashar.shortcutTitle,
+      detailTitle: t.auyzashar.detailTitle,
       content: t.auyzashar.content,
       img: newsImage4,
       images: [auz1, auz2, auz3, auz4],
       date: '21.03.2024'
     },
     {
-      id: 4,
+      id: 5,
       title: t.workerDay.title,
-      shortCutTitle: t.workerDay.shortcutTitle,
+      detailTitle: t.workerDay.detailTitle,
       content: t.workerDay.content,
       img: newsImage2,
       images: [workerDay1, workerDay2, workerDay3, workerDay4],
       date: '16.09.2023'
     },
     {
-      id: 5,
+      id: 6,
       title: t.teamBuilding.title,
-      shortCutTitle: t.teamBuilding.shortcutTitle,
+      detailTitle: t.teamBuilding.detailTitle,
       content: t.teamBuilding.content,
-      img: newsImage6,
+      img: teamBuilding4,
       images: [teamBuilding1, teamBuilding2, teamBuilding3, teamBuilding4, teamBuilding5, teamBuilding6, teamBuilding7, teamBuilding8],
       date: '01.07.2023'
+    },
+    {
+      id: 7,
+      title: t.auyzashar2.title,
+      detailTitle: t.auyzashar2.detailTitle,
+      content: t.auyzashar2.content,
+      img: auzSecond1,
+      images: [auzSecond2, auzSecond3, auzSecond4, auzSecond5, auzSecond1],
+      date: '05.04.2023'
+    },
+    {
+      id: 8,
+      title: t.agreement.title,
+      detailTitle: t.agreement.title,
+      content: t.agreement.content,
+      img: newsImages7,
+      date: '01.01.2023'
     }
   ];
 
@@ -145,7 +183,6 @@ const News = ({ t }: NewsComponentProps) => {
         <h2 className="text-[#10375C] font-bold text-4xl tracking-tight leading-snug">
           {t.news.title}
         </h2>
-        <Separator orientation="vertical" className="w-[72px] h-[2px] bg-[#222831]"/>
       </div>
       <div className="lg:mt-8">
         <Carousel>
@@ -167,22 +204,24 @@ const News = ({ t }: NewsComponentProps) => {
                         </DialogTrigger>
                         <DialogContent className="max-w-screen-xl h-[80%] overflow-y-scroll">
                           <DialogTitle className="text-[#10375C] font-bold text-4xl tracking-tight leading-snug">
-                            {news.title}
+                            {news.detailTitle}
                           </DialogTitle>
                           <div>
-                            <div className="flex items-center gap-x-6 justify-end">
-                              <button
-                                onClick={() => api?.scrollPrev()}
-                                className="-rotate-180"
-                              >
-                                <Image src={NextIcon} alt="icon" />
-                              </button>
-                              <button
-                                onClick={() => api?.scrollNext()}
-                              >
-                                <Image src={NextIcon} alt="icon" />
-                              </button>
-                            </div>
+                            {news.images && (
+                              <div className="flex items-center gap-x-6 justify-end">
+                                <button
+                                  onClick={() => api?.scrollPrev()}
+                                  className="-rotate-180"
+                                >
+                                  <Image src={NextIcon} alt="icon"/>
+                                </button>
+                                <button
+                                  onClick={() => api?.scrollNext()}
+                                >
+                                  <Image src={NextIcon} alt="icon"/>
+                                </button>
+                              </div>
+                            )}
                             <Carousel
                               opts={{
                                 loop: true,
@@ -196,7 +235,7 @@ const News = ({ t }: NewsComponentProps) => {
                               className="mt-4"
                             >
                               <CarouselContent>
-                                {news.images.map((item, i) => (
+                                {news.images && news.images.map((item, i) => (
                                   <CarouselItem key={i} className="flex items-center justify-center">
                                     <Image priority={true} src={item} alt="slide-img" className="object-cover" />
                                   </CarouselItem>

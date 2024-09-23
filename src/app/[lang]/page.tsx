@@ -7,7 +7,7 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
 
   return (
     <main>
-      <Slider />
+      <Slider t={t} />
       <News t={t} />
     </main>
   )

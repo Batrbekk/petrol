@@ -4,8 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b1c9730-af8e-497d-8146-cace264aa4b0" name="Changes" comment="feat: v3.0">
-      <change beforePath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/layout.tsx" afterDir="false" />
+    <list default="true" id="5b1c9730-af8e-497d-8146-cace264aa4b0" name="Changes" comment="feat: remove en">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Slider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/dictionaries/kk.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/dictionaries/kk.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/dictionaries/ru.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/dictionaries/ru.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/slider/2.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +73,7 @@
       <updated>1726138256725</updated>
       <workItem from="1726138257835" duration="10154000" />
       <workItem from="1726153638809" duration="26586000" />
-      <workItem from="1726713319413" duration="27197000" />
+      <workItem from="1726713319413" duration="30849000" />
     </task>
     <task id="LOCAL-00001" summary="feat: v2.0">
       <option name="closed" value="true" />
@@ -82,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726826877655</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: remove en">
+      <option name="closed" value="true" />
+      <created>1726827036622</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726827036622</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +119,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: v2.0" />
     <MESSAGE value="feat: v3.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: v3.0" />
+    <MESSAGE value="feat: remove en" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: remove en" />
   </component>
 </project>
