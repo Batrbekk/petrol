@@ -2,7 +2,7 @@ import Negotiator from "negotiator";
 import { match } from "@formatjs/intl-localematcher";
 import { NextRequest, NextResponse } from "next/server";
 
-const locales = ["ru", "kk"];
+const locales = ["en", "ru", "kk"];
 const defaultLocale = "ru";
 const cookieName = "i18nlang";
 

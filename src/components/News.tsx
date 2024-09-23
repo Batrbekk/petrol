@@ -124,7 +124,7 @@ const News = ({ t }: NewsComponentProps) => {
       id: 3,
       title: t.nauryz.title,
       detailTitle: t.nauryz.title,
-      content: t.charity.content,
+      content: t.nauryz.content,
       img: nauryz2,
       images: [nauryz2, nauryz1, nauryz3, nauryz4],
       date: '22.03.2024'

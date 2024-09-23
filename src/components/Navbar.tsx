@@ -88,6 +88,9 @@ const Navbar: React.FC<NavbarProps> = ({ lang, dictionary }) => {
           <SelectItem value="ru">
             RU
           </SelectItem>
+          <SelectItem value="en">
+            EN
+          </SelectItem>
           <SelectItem value="kk">
             KK
           </SelectItem>
