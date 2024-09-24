@@ -162,7 +162,7 @@ const News = ({ t }: NewsComponentProps) => {
       detailTitle: t.auyzashar2.detailTitle,
       content: t.auyzashar2.content,
       img: auzSecond1,
-      images: [auzSecond2, auzSecond3, auzSecond4, auzSecond5, auzSecond1],
+      images: [auzSecond2, auzSecond3, auzSecond4, auzSecond1],
       date: '05.04.2023'
     },
     {
@@ -190,7 +190,7 @@ const News = ({ t }: NewsComponentProps) => {
             {newsList.map((item) => (
               <CarouselItem key={item.id} className="basis-1/3">
                 <Card className="flex flex-col gap-y-4 h-full">
-                  <Image src={item.img} alt="card-img" className="rounded-t-lg" />
+                  <Image src={item.img} alt="card-img" className="rounded-t-lg w-[414px] h-[276px]" />
                   <CardContent className="flex flex-col h-full">
                     <h1 className="text-2xl font-semibold">{item.title}</h1>
                     <p className="text-gray-500 my-2">{item.date}</p>
@@ -237,7 +237,7 @@ const News = ({ t }: NewsComponentProps) => {
                               <CarouselContent>
                                 {news.images && news.images.map((item, i) => (
                                   <CarouselItem key={i} className="flex items-center justify-center">
-                                    <Image priority={true} src={item} alt="slide-img" className="object-cover" />
+                                    <Image priority={true} src={item} alt="slide-img" className="object-cover h-[350px]" />
                                   </CarouselItem>
                                 ))}
                               </CarouselContent>

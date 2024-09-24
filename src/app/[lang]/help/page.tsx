@@ -32,9 +32,9 @@ export default async function Help({ params: { lang } }: { params: { lang: strin
               </p>
             ))}
           </div>
-          <div className="flex items-center gap-x-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {first.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg w-[314px] h-[209px]"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>
@@ -52,9 +52,9 @@ export default async function Help({ params: { lang } }: { params: { lang: strin
               </p>
             ))}
           </div>
-          <div className="flex items-center gap-x-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {second.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg w-[314px] h-[209px]"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>

@@ -59,7 +59,7 @@ const Footer: React.FC<FooterProps> = ({ dictionary }) => {
               <Image src={Logo} alt="logo" />
             </Link>
             <p className="text-base max-w-[300px]">
-              АО &ldquo;ТУРГАЙ-ПЕТРОЛЕУМ&ldquo;
+              {dictionary.footerTitle}
             </p>
           </div>
           <div className="flex flex-col gap-y-4">

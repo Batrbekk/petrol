@@ -74,9 +74,9 @@ export default async function Events({ params: { lang } }: { params: { lang: str
               </p>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {auz.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>
@@ -94,9 +94,9 @@ export default async function Events({ params: { lang } }: { params: { lang: str
               </p>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {oilDay.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>
@@ -114,9 +114,9 @@ export default async function Events({ params: { lang } }: { params: { lang: str
               </p>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {nauryz.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>
@@ -134,9 +134,9 @@ export default async function Events({ params: { lang } }: { params: { lang: str
               </p>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {workerDay.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>
@@ -154,9 +154,9 @@ export default async function Events({ params: { lang } }: { params: { lang: str
               </p>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {teamBuilding.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>
@@ -174,9 +174,9 @@ export default async function Events({ params: { lang } }: { params: { lang: str
               </p>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {bossAwarding.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>
@@ -194,9 +194,9 @@ export default async function Events({ params: { lang } }: { params: { lang: str
               </p>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {auzashar2.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>
@@ -214,9 +214,9 @@ export default async function Events({ params: { lang } }: { params: { lang: str
               </p>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {charity.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>
@@ -249,9 +249,9 @@ export default async function Events({ params: { lang } }: { params: { lang: str
               </p>
             ))}
           </div>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {oilDaySecond.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
             ))}
           </div>
         </div>
