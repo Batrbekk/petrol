@@ -51,7 +51,6 @@ import auzSecond1 from "@/public/news/auyzashar2/1.jpeg";
 import auzSecond2 from "@/public/news/auyzashar2/2.jpeg";
 import auzSecond3 from "@/public/news/auyzashar2/3.jpeg";
 import auzSecond4 from "@/public/news/auyzashar2/4.jpeg";
-import auzSecond5 from "@/public/news/auyzashar2/5.jpeg";
 
 import teamBuilding1 from "@/public/news/teamBuilding/1.jpg";
 import teamBuilding2 from "@/public/news/teamBuilding/2.jpg";
