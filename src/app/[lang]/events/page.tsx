@@ -10,6 +10,7 @@ import auzSecond1 from "@/public/news/auyzashar2/1.jpeg";
 import auzSecond2 from "@/public/news/auyzashar2/2.jpeg";
 import auzSecond3 from "@/public/news/auyzashar2/3.jpeg";
 import auzSecond4 from "@/public/news/auyzashar2/4.jpeg";
+import auzSecond5 from "@/public/news/auyzashar2/5.jpeg";
 
 import oilDay1 from "@/public/news/oilWorker2/1.jpg";
 import oilDay2 from "@/public/news/oilWorker2/2.jpg";
@@ -31,9 +32,13 @@ import workerDay2 from "@/public/news/workerDay/2.jpg";
 import workerDay3 from "@/public/news/workerDay/3.jpg";
 import workerDay4 from "@/public/news/workerDay/4.jpg";
 
+import teamBuilding1 from "@/public/news/teamBuilding/1.jpg";
+import teamBuilding2 from "@/public/news/teamBuilding/2.jpg";
+import teamBuilding3 from "@/public/news/teamBuilding/3.jpg";
 import teamBuilding4 from "@/public/news/teamBuilding/4.jpg";
 import teamBuilding5 from "@/public/news/teamBuilding/5.jpg";
 import teamBuilding7 from "@/public/news/teamBuilding/7.jpg";
+import teamBuilding8 from "@/public/news/teamBuilding/8.jpg";
 import teamBuilding9 from "@/public/news/teamBuilding/9.jpg";
 
 import awards1 from "@/public/news/awards/1.jpg";
@@ -53,10 +58,10 @@ export default async function Events({ params: { lang } }: { params: { lang: str
   const oilDay = [oilDay1, oilDay2, oilDay3, oilDay4];
   const nauryz = [nauryz1, nauryz2, nauryz3, nauryz4];
   const workerDay = [workerDay1, workerDay2, workerDay3, workerDay4];
-  const teamBuilding = [teamBuilding4, teamBuilding5, teamBuilding9, teamBuilding7];
+  const teamBuilding = [teamBuilding1, teamBuilding2, teamBuilding3, teamBuilding4, teamBuilding5, teamBuilding9, teamBuilding7, teamBuilding8,];
   const bossAwarding = [awards1, awards2, awards3, awards4];
   const charity = [charity1, charity2, charity3, charity4];
-  const auzashar2 = [auzSecond1, auzSecond2, auzSecond3, auzSecond4];
+  const auzashar2 = [auzSecond1, auzSecond2, auzSecond3, auzSecond4, auzSecond5];
   const oilDaySecond = [oilWorker1, oilWorker2, oilWorker3, oilWorker4];
 
   return (
@@ -156,7 +161,7 @@ export default async function Events({ params: { lang } }: { params: { lang: str
           </div>
           <div className="flex flex-wrap justify-center gap-2">
             {teamBuilding.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] h-1/2"/>
             ))}
           </div>
         </div>

@@ -72,6 +72,7 @@ import {
   CarouselPrevious
 } from "@/components/ui/carousel";
 import {Card, CardContent} from "@/components/ui/card";
+import {cn} from "@/lib/utils";
 
 interface INewsProps {
   id: number;
@@ -236,7 +237,10 @@ const News = ({ t }: NewsComponentProps) => {
                               <CarouselContent>
                                 {news.images && news.images.map((item, i) => (
                                   <CarouselItem key={i} className="flex items-center justify-center">
-                                    <Image priority={true} src={item} alt="slide-img" className="object-cover h-[350px]" />
+                                    <Image priority={true} src={item} alt="slide-img" className={cn(
+                                      'object-cover',
+                                      news.id === 7 ? 'w-1/2' : 'h-[350px]'
+                                    )} />
                                   </CarouselItem>
                                 ))}
                               </CarouselContent>

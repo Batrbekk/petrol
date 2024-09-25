@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b1c9730-af8e-497d-8146-cace264aa4b0" name="Changes" comment="feat: update eng">
+    <list default="true" id="5b1c9730-af8e-497d-8146-cace264aa4b0" name="Changes" comment="feat: remove unused photo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/events/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/events/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[lang]/help/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[lang]/help/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/news/teamBuilding/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/news/teamBuilding/8.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +70,8 @@
       <workItem from="1726153638809" duration="26586000" />
       <workItem from="1726713319413" duration="35913000" />
       <workItem from="1727172447526" duration="1354000" />
-      <workItem from="1727173895092" duration="14000" />
+      <workItem from="1727173895092" duration="180000" />
+      <workItem from="1727204212854" duration="2403000" />
     </task>
     <task id="LOCAL-00001" summary="feat: v2.0">
       <option name="closed" value="true" />
@@ -140,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727173792036</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: remove unused photo">
+      <option name="closed" value="true" />
+      <created>1727173919415</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727173919415</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +178,7 @@
     <MESSAGE value="feat: update info about boss" />
     <MESSAGE value="feat: update events" />
     <MESSAGE value="feat: update eng" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update eng" />
+    <MESSAGE value="feat: remove unused photo" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: remove unused photo" />
   </component>
 </project>

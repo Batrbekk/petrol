@@ -54,7 +54,7 @@ export default async function Help({ params: { lang } }: { params: { lang: strin
           </div>
           <div className="flex flex-wrap justify-center gap-2">
             {second.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg max-w-[400px] max-h-[250px]"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg w-1/3"/>
             ))}
           </div>
         </div>
