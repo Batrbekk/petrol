@@ -51,17 +51,17 @@ const Footer: React.FC<FooterProps> = ({ dictionary }) => {
   ];
 
   return (
-    <footer className="bg-white py-12 lg:mt-14">
-      <div className="container mx-auto flex items-start justify-between">
-        <div className="flex items-start lg:gap-x-24">
-          <div className="flex flex-col gap-y-4">
-            <Link href="/" className="cursor-pointer">
-              <Image src={Logo} alt="logo" />
-            </Link>
-            <p className="text-base max-w-[300px]">
-              {dictionary.footerTitle}
-            </p>
-          </div>
+    <footer className="bg-white py-12 mt-14">
+      <div className="container mx-auto px-4 lg:p-0 flex flex-col lg:flex-row items-start justify-between">
+        <div className="flex flex-col gap-y-4 mb-8 lg:mb-0">
+          <Link href="/" className="cursor-pointer">
+            <Image src={Logo} alt="logo"/>
+          </Link>
+          <p className="text-base max-w-[300px]">
+            {dictionary.footerTitle}
+          </p>
+        </div>
+        <div className="flex items-start lg:gap-x-24 justify-between lg:justify-center w-full lg:w-fit">
           <div className="flex flex-col gap-y-4">
             {links.map((link) => (
               <Link
@@ -85,7 +85,7 @@ const Footer: React.FC<FooterProps> = ({ dictionary }) => {
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-4 mt-8 lg:mt-0">
           <p className="font-medium text-xl text-[#0D2C4A]">{dictionary.navbar.contact}</p>
           <div className="flex items-center gap-x-4">
             <Mail className="text-[#FF5722]"/>

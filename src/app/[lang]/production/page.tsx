@@ -12,15 +12,15 @@ export default async function production({ params: { lang } }: { params: { lang:
 
   return (
     <main>
-      <section className="flex justify-center gap-x-8 overflow-hidden relative h-[680px]">
+      <section className="flex justify-center gap-x-8 overflow-hidden relative lg:h-[680px]">
         <Image src={slider3} alt="production-image"/>
         <div className="w-full h-full left-0 top-0 bg-black/50 absolute flex items-center">
-          <h1 className="text-white scroll-m-20 text-5xl font-semibold tracking-tight text-left ml-10">
-            {t.production.title} <br /> <span className="text-4xl">{t.production.subtitle}</span>
+          <h1 className="text-white scroll-m-20 text-2xl lg:text-5xl font-semibold tracking-tight text-left ml-10">
+            {t.production.title} <br /> <span className="text-xl lg:text-4xl">{t.production.subtitle}</span>
           </h1>
         </div>
       </section>
-      <section className="container mx-auto flex items-center justify-between lg:h-56 mt-10 lg:mt-14">
+      <section className="container mx-auto flex flex-col gap-y-4 lg:flex-row items-center justify-between px-4 lg:px-0 lg:h-56 mt-10 lg:mt-14">
         <div className="lg:w-72 w-full flex flex-col gap-y-4 items-center justify-center text-center">
           <h4 className="scroll-m-20 text-2xl font-semibold tracking-tight text-[#0D2C4A]">{t.production.info.first.title}</h4>
           <p className="text-md">{t.production.info.first.text}</p>
@@ -38,10 +38,10 @@ export default async function production({ params: { lang } }: { params: { lang:
           <p className="text-md">{t.production.info.thirty.text}</p>
         </div>
       </section>
-      <section className="container mx-auto mt-10 lg:mt-14">
+      <section className="container mx-auto px-4 lg:px-0 mt-10 lg:mt-14">
         <Carousel>
           <CarouselContent>
-            <CarouselItem className="basis-1/3">
+            <CarouselItem className="basis-80 lg:basis-1/3">
               <div className="relative rounded-lg overflow-hidden">
                 <Image src={slider3} alt="production-image" />
                 <div className="w-full h-full top-0 bg-black/50 absolute">
@@ -51,7 +51,7 @@ export default async function production({ params: { lang } }: { params: { lang:
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="basis-1/3">
+            <CarouselItem className="basis-80 lg:basis-1/3">
               <div className="relative rounded-lg overflow-hidden">
                 <Image src={slider6} alt="production-image"/>
                 <div className="w-full h-full top-0 bg-black/50 absolute">
@@ -61,7 +61,7 @@ export default async function production({ params: { lang } }: { params: { lang:
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="basis-1/3">
+            <CarouselItem className="basis-80 lg:basis-1/3">
               <div className="relative rounded-lg overflow-hidden">
                 <Image src={slider4} alt="production-image"/>
                 <div className="w-full h-full top-0 bg-black/50 absolute">
@@ -71,7 +71,7 @@ export default async function production({ params: { lang } }: { params: { lang:
                 </div>
               </div>
             </CarouselItem>
-            <CarouselItem className="basis-1/3">
+            <CarouselItem className="basis-80 lg:basis-1/3">
               <div className="relative rounded-lg overflow-hidden">
                 <Image src={slider5} alt="production-image"/>
                 <div className="w-full h-full top-0 bg-black/50 absolute">
@@ -82,8 +82,8 @@ export default async function production({ params: { lang } }: { params: { lang:
               </div>
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious/>
-          <CarouselNext/>
+          <CarouselPrevious className="hidden lg:flex"/>
+          <CarouselNext className="hidden lg:flex"/>
         </Carousel>
       </section>
     </main>

@@ -178,19 +178,19 @@ const News = ({ t }: NewsComponentProps) => {
   const [news, setNews] = useState<INewsProps>(newsList[0]);
 
   return (
-    <section className="lg:mt-28 flex flex-col justify-center container mx-auto">
+    <section className="lg:mt-28 mt-14 flex flex-col justify-center container mx-auto px-4 lg:px-0">
       <div className="flex items-center gap-x-3">
         <h2 className="text-[#10375C] font-bold text-4xl tracking-tight leading-snug">
           {t.news.title}
         </h2>
       </div>
-      <div className="lg:mt-8">
+      <div className="lg:mt-8 mt-4">
         <Carousel>
           <CarouselContent className="flex items-stretch">
             {newsList.map((item) => (
-              <CarouselItem key={item.id} className="basis-1/3">
+              <CarouselItem key={item.id} className=" basis-80 lg:basis-1/3">
                 <Card className="flex flex-col gap-y-4 h-full">
-                  <Image src={item.img} alt="card-img" className="rounded-t-lg w-[414px] h-[276px]" />
+                  <Image src={item.img} alt="card-img" className="rounded-t-lg lg:w-[414px] h-[200px] lg:h-[276px]" />
                   <CardContent className="flex flex-col h-full">
                     <h1 className="text-2xl font-semibold">{item.title}</h1>
                     <p className="text-gray-500 my-2">{item.date}</p>
@@ -262,8 +262,8 @@ const News = ({ t }: NewsComponentProps) => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious  className="hidden lg:flex"/>
+          <CarouselNext  className="hidden lg:flex"/>
         </Carousel>
       </div>
     </section>

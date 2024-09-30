@@ -6,12 +6,12 @@ export default async function History({ params: { lang } }: { params: { lang: st
   const t = await getDictionary(lang);
 
   return (
-    <main className="container mx-auto">
-      <section className="flex mt-14 rounded-lg overflow-hidden">
-        <div className="w-1/2">
+    <main className="container mx-auto px-4 lg:px-0">
+      <section className="flex flex-col lg:flex-row mt-14 rounded-lg overflow-hidden">
+        <div className="w-full lg:w-1/2">
           <Image src={HistoryImage} alt="history-img" />
         </div>
-        <div className="w-1/2 flex flex-col gap-y-4 p-4 bg-[#222831] text-white">
+        <div className="w-full lg:w-1/2 flex flex-col gap-y-4 p-4 bg-[#222831] text-white">
           <h1 className="scroll-m-20 text-2xl font-semibold tracking-tight">
             {t.history.title}
           </h1>

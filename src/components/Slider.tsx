@@ -35,7 +35,7 @@ const Slider = ({ t }: Props) => {
   ];
 
   return (
-    <section className="relative h-[680px]">
+    <section className="relative h-[240px] lg:h-[680px]">
       <Carousel
         opts={{
           loop: true,
@@ -57,7 +57,7 @@ const Slider = ({ t }: Props) => {
           ))}
         </CarouselContent>
         <div className="w-full h-full left-0 top-0 bg-black/50 absolute flex items-center justify-center">
-          <h1 className="text-white scroll-m-20 text-5xl font-semibold tracking-tight text-center max-w-[60%]">
+          <h1 className="text-white scroll-m-20 text-2xl lg:text-5xl font-semibold tracking-tight text-center lg:max-w-[60%]">
             {t.sliderTitle}
           </h1>
         </div>

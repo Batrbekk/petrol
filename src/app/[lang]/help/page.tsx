@@ -18,11 +18,11 @@ export default async function Help({ params: { lang } }: { params: { lang: strin
   const second = [second1, second2, second3, second4];
 
   return (
-    <main className="container mx-auto flex flex-col">
+    <main className="container mx-auto flex flex-col px-4 lg:px-0">
       <section className="mt-10 lg:mt-20 rounded-lg overflow-hidden">
         <div className="flex flex-col gap-y-4 items-center">
           <h2
-            className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 w-full lg:w-2/3 text-center text-[#0D2C4A] uppercase">
+            className="scroll-m-20 pb-2 text-2xl lg:text-3xl font-semibold tracking-tight first:mt-0 w-full lg:w-2/3 text-center text-[#0D2C4A] uppercase">
             {t.help.first.title}
           </h2>
           <div className="flex flex-col gap-y-2">
@@ -42,7 +42,7 @@ export default async function Help({ params: { lang } }: { params: { lang: strin
       <section className="mt-10 lg:mt-20 rounded-lg overflow-hidden">
         <div className="flex flex-col gap-y-4 items-center">
           <h2
-            className="scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0 w-full lg:w-2/3 text-center text-[#0D2C4A] uppercase">
+            className="scroll-m-20 pb-2 text-2xl lg:text-3xl font-semibold tracking-tight first:mt-0 w-full lg:w-2/3 text-center text-[#0D2C4A] uppercase">
             {t.help.second.title}
           </h2>
           <div className="flex flex-col gap-y-2">
@@ -54,7 +54,7 @@ export default async function Help({ params: { lang } }: { params: { lang: strin
           </div>
           <div className="flex flex-wrap justify-center gap-2">
             {second.map((item, i) => (
-              <Image key={i} src={item} alt="auz-img" className="rounded-lg w-1/3"/>
+              <Image key={i} src={item} alt="auz-img" className="rounded-lg lg:w-1/3"/>
             ))}
           </div>
         </div>

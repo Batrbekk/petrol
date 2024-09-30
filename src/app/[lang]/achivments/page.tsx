@@ -6,7 +6,7 @@ export default async function Achivments({ params: { lang } }: { params: { lang:
   const t = await getDictionary(lang);
 
   return (
-    <main className="container mx-auto">
+    <main className="container mx-auto px-4 lg:px-0">
       <section className="flex flex-col justify-center items-center gap-x-8 mt-14 rounded-lg overflow-hidden">
         <div className="flex flex-col items-center gap-y-8">
           <h1 className="text-center text-[#0D2C4A] scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">{t.achivments.title}</h1>
@@ -14,11 +14,11 @@ export default async function Achivments({ params: { lang } }: { params: { lang:
             {t.achivments.subtitle}
           </h4>
         </div>
-        <div className="flex items-start justify-center mt-10">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row items-start justify-center mt-10">
+          <div className="w-full lg:w-1/2">
             <Image src={AchivmentsImage} alt="achivments-image" />
           </div>
-          <div className="w-1/2 flex flex-col gap-y-4 p-4">
+          <div className="w-full lg:w-1/2 flex flex-col gap-y-4 p-4">
             <h1 className="scroll-m-20 text-2xl font-semibold tracking-tight">
               {t.achivments.info.title}
             </h1>
