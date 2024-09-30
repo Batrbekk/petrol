@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, dictionary }) => {
   };
 
   return (
-    <nav className="container mx-auto my-8">
+    <nav className="container mx-auto my-4 lg:my-8">
       <div className="hidden items-center justify-between lg:flex">
         <div className="flex items-center gap-x-8">
           <Link href="/" className="cursor-pointer">

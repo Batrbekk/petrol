@@ -202,7 +202,7 @@ const News = ({ t }: NewsComponentProps) => {
                         >
                           {t.news.detail}
                         </DialogTrigger>
-                        <DialogContent className="max-w-screen-xl h-[80%] overflow-y-scroll">
+                        <DialogContent className="max-w-screen-xl h-screen lg:h-[80%] overflow-y-scroll">
                           <DialogTitle className="text-[#10375C] font-bold text-4xl tracking-tight leading-snug">
                             {news.detailTitle}
                           </DialogTitle>
@@ -239,10 +239,10 @@ const News = ({ t }: NewsComponentProps) => {
                                   <CarouselItem key={i} className="flex items-center justify-center">
                                     <Image priority={true} src={item} alt="slide-img" className={cn(
                                       'object-cover',
-                                      news.id === 7  ? 'w-1/2' : 'h-[350px]',
-                                      news.id === 3 ? 'w-1/2' : 'h-[350px]',
-                                      news.id === 6 ? 'w-1/2' : 'h-[450px]',
-                                      i === 7 && 'w-1/4'
+                                      news.id === 7  ? 'lg:w-1/2 w-full' : 'lg:h-[350px] h-[250px]',
+                                      news.id === 3 ? 'lg:w-1/2 w-full' : 'lg:h-[350px] h-[250px]',
+                                      news.id === 6 ? 'lg:w-1/2 w-full' : 'lg:h-[350px] h-[250px]',
+                                      (news.id === 6 && i === 7) ? 'lg:w-1/4 lg:h-auto w-1/2 h-[250px]' : ''
                                     )} />
                                   </CarouselItem>
                                 ))}
