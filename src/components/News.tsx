@@ -240,7 +240,9 @@ const News = ({ t }: NewsComponentProps) => {
                                     <Image priority={true} src={item} alt="slide-img" className={cn(
                                       'object-cover',
                                       news.id === 7  ? 'w-1/2' : 'h-[350px]',
-                                      news.id === 3 ? 'w-1/2' : 'h-[350px]'
+                                      news.id === 3 ? 'w-1/2' : 'h-[350px]',
+                                      news.id === 6 ? 'w-1/2' : 'h-[450px]',
+                                      i === 7 && 'w-1/4'
                                     )} />
                                   </CarouselItem>
                                 ))}

@@ -51,7 +51,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
       </set>
     </attachedChunks>
   </component>
@@ -69,7 +69,8 @@
       <workItem from="1727172447526" duration="1354000" />
       <workItem from="1727173895092" duration="180000" />
       <workItem from="1727204212854" duration="2429000" />
-      <workItem from="1727274139821" duration="107000" />
+      <workItem from="1727274139821" duration="548000" />
+      <workItem from="1727657346858" duration="168000" />
     </task>
     <task id="LOCAL-00001" summary="feat: v2.0">
       <option name="closed" value="true" />
@@ -159,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727262351451</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: update img">
+      <option name="closed" value="true" />
+      <created>1727274290517</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1727274290517</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
